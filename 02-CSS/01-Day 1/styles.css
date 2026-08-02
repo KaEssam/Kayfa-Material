@@ -1,0 +1,154 @@
+/* h2{
+    color: blue;
+    background-color: brown;
+}
+
+.head{
+    background-color: black;
+    color: white;
+}
+
+
+.danger{
+    background-color: red;
+    color: black;
+}
+
+.warning{
+    background-color: yellow;
+    color:black;
+}
+
+#test.head{
+    background-color: blueviolet;
+}
+
+p{
+    background-color: darkmagenta;
+}
+
+p{
+    background-color: burlywood;
+} */
+/* id > class > tag */
+
+
+/* div{
+    background-color: aquamarine;
+} */
+
+.dev1{
+    background-color: blue;
+    color: white;
+}
+
+.dev2{
+    background-color: red;
+    color: white;
+}
+
+p{
+    color: chocolate;
+    background-color: black;
+    font-family: "yaman", ;
+    font-size: larger;
+    font-weight: 500;
+    font-style: italic;
+    
+}
+
+/* .special-p{
+    color: red;
+    background-color: blue;
+} */
+
+.dev1 p{
+    color: black;
+}
+
+h2{
+    color: aquamarine;
+}
+
+.child h2{
+    color: green;
+}
+
+/* .parant:last-child h2{
+    background-color: black;
+    color: burlywood;
+} */
+
+.parant:first-child {
+    background-color: aqua;
+}
+
+.parant:nth-child(2){
+    background-color: black;
+    color: burlywood;
+}
+
+.parant:last-child{
+    background-color: blue;
+}
+/* .Grandparant .parant .child > h2{
+    background-color: black;
+    color: burlywood;
+} */
+
+/* self-study => strong */
+
+@font-face {
+    font-family: yaman;
+    src: url(./Edu_VIC_WA_NT_Hand/EduVICWANTHand-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: ahemd;
+    src: url(./Edu_VIC_WA_NT_Hand/EduVICWANTHand-VariableFont_wght.ttf);
+}
+
+
+
+button{
+    border-radius: 15px;
+    height: 30px;
+    width: 20;
+}
+.approve {
+    background-color: green;
+    color: whitesmoke;
+}
+
+.delete{
+    background-color: red;
+    color: black;
+}
+
+.approve:hover{
+    opacity: 75%;
+    border: solid rebeccapurple;
+}
+
+a::before{
+    content: "->";
+}
+
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
