@@ -32,29 +32,27 @@ p{
 } */
 /* id > class > tag */
 
-
 /* div{
     background-color: aquamarine;
 } */
 
-.dev1{
-    background-color: blue;
-    color: white;
+.dev1 {
+  background-color: blue;
+  color: white;
 }
 
-.dev2{
-    background-color: red;
-    color: white;
+.dev2 {
+  background-color: red;
+  color: white;
 }
 
-p{
-    color: chocolate;
-    background-color: black;
-    font-family: "yaman", ;
-    font-size: larger;
-    font-weight: 500;
-    font-style: italic;
-    
+p {
+  color: chocolate;
+  background-color: black;
+  font-family: "yaman";
+  font-size: larger;
+  font-weight: 500;
+  font-style: italic;
 }
 
 /* .special-p{
@@ -62,16 +60,16 @@ p{
     background-color: blue;
 } */
 
-.dev1 p{
-    color: black;
+.dev1 p {
+  color: black;
 }
 
-h2{
-    color: aquamarine;
+h2 {
+  color: aquamarine;
 }
 
-.child h2{
-    color: green;
+.child h2 {
+  color: green;
 }
 
 /* .parant:last-child h2{
@@ -80,16 +78,16 @@ h2{
 } */
 
 .parant:first-child {
-    background-color: aqua;
+  background-color: aqua;
 }
 
-.parant:nth-child(2){
-    background-color: black;
-    color: burlywood;
+.parant:nth-child(2) {
+  background-color: black;
+  color: burlywood;
 }
 
-.parant:last-child{
-    background-color: blue;
+.parant:last-child {
+  background-color: blue;
 }
 /* .Grandparant .parant .child > h2{
     background-color: black;
@@ -99,39 +97,37 @@ h2{
 /* self-study => strong */
 
 @font-face {
-    font-family: yaman;
-    src: url(./Edu_VIC_WA_NT_Hand/EduVICWANTHand-VariableFont_wght.ttf);
+  font-family: yaman;
+  src: url(./Edu_VIC_WA_NT_Hand/EduVICWANTHand-VariableFont_wght.ttf);
 }
 
 @font-face {
-    font-family: ahemd;
-    src: url(./Edu_VIC_WA_NT_Hand/EduVICWANTHand-VariableFont_wght.ttf);
+  font-family: ahemd;
+  src: url(./Edu_VIC_WA_NT_Hand/EduVICWANTHand-VariableFont_wght.ttf);
 }
 
-
-
-button{
-    border-radius: 15px;
-    height: 30px;
-    width: 20;
+button {
+  border-radius: 15px;
+  height: 30px;
+  width: 20;
 }
 .approve {
-    background-color: green;
-    color: whitesmoke;
+  background-color: green;
+  color: whitesmoke;
 }
 
-.delete{
-    background-color: red;
-    color: black;
+.delete {
+  background-color: red;
+  color: black;
 }
 
-.approve:hover{
-    opacity: 75%;
-    border: solid rebeccapurple;
+.approve:hover {
+  opacity: 75%;
+  border: solid rebeccapurple;
 }
 
-a::before{
-    content: "->";
+a::before {
+  content: "->";
 }
 
 a:link {
