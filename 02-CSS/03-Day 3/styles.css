@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+img {
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 300px;
+  height: auto;
+  padding: 40px;
+}
+/* .card1,
+.card2,
+.card3 {
+  width: 300px;
+  height: auto;
+  padding: 40px;
+} */
+
+a {
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-family: "Lexend Deca", sans-serif;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 15px;
+}
+
+h1 {
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders", sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-top: 25px;
+  margin-right: 25px;
+  margin-bottom: 90px;
+  height: 100px;
+}
+
+/* .card1 {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.card2 {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card3 {
+  background-color: hsl(179, 100%, 13%);
+} */
+
+/* .card:first-child {
+  background-color: hsl(31, 77%, 52%);
+} */
+
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 0 0 10px;
+}
+.card:nth-child(2) {
+  background-color: hsl(184, 100%, 22%);
+}
+.card:nth-child(3) {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 10px 10px 0;
+}
