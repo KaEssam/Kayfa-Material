@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cream: #fff5ef;
+  --ink: #062638;
+  --bg-main: white;
+}
+
+body {
+  color: var(--ink);
+  padding: 0rem 5rem;
+}
+
+.about-us,
+.plans,
+.features {
+  width: 70%;
+}
+
+.logo {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #062638;
+  margin-bottom: 1rem;
+  font-weight: bolder;
+}
+
+.plan-btn {
+  background-color: var(--cream);
+  border: 1px solid var(--ink);
+  border-radius: 10%;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-size: medium;
+}
+
+.hero {
+  width: 70%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem;
+}
+
+.hero-data h3 {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.hero-data p {
+  font-size: small;
+  color: var(--ink);
+  opacity: 50%;
+  margin-bottom: 5rem;
+}
+
+.about-us {
+  width: 70%;
+  display: flex;
+  gap: 4rem;
+  margin: 10rem 0rem;
+}
+
+.about-us h2 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+.about-us li,
+.plan-item li {
+  font-size: 1rem;
+  color: var(--ink);
+  opacity: 50%;
+  margin: 1rem;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1f);
+  gap: 1rem;
+  margin: 3rem 0rem;
+}
+
+.feature-card {
+  border: 5px solid var(--ink);
+  width: 25rem;
+  height: 15rem;
+  padding: 3rem;
+}
+
+.feature-card h3 {
+  font-size: 2rem;
+  border: 2px solid var(--ink);
+  display: inline;
+  padding: 0.5rem;
+  margin: 1rem 0rem;
+}
+
+.feature-card p {
+  font-family: 0.25rem;
+  margin: 1rem 0rem;
+}
+
+.plans {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1f);
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.plan-item {
+  border: 1px solid var(--ink);
+  padding: 2rem;
+  width: 30rem;
+  height: 30rem;
+}
+
+.plan-item h2 {
+  font-size: 3rem;
+  margin: 0.5rem 0;
+}
+
+.plan-item button {
+  margin-top: 10rem;
+}
+
+nav {
+  background-color: var(--cream);
+  width: 80%;
+  height: 5rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 2px solid var(--ink);
+  position: sticky;
+  top: 0;
+}
+
+.hero-visual {
+  position: relative;
+}
+
+.badge {
+  width: 5rem;
+  border: #062638 5px solid;
+  background-color: aqua;
+  position: absolute;
+  top: 0;
+  right: -1rem;
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    background-color: lightgreen;
+  }
+
+  .hero {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem;
+  }
+  .plans {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1f);
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+}
