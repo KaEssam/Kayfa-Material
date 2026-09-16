@@ -1,0 +1,80 @@
+function addFee(price) {
+  return price + 20;
+}
+
+console.log(addFee("100"));
+
+
+
+
+//////////////////////
+
+function classify(score) {
+  if (score < 50) {
+    return "Fail";
+  }
+
+  console.log("passed the first rule");
+
+  return "Pass";
+}
+
+console.log(classify(40));
+
+
+//////////////////////////////////
+
+
+function calculate() {
+  const total = 200;
+  return total;
+}
+
+const result = calculate();
+
+console.log(result);
+console.log(total);
+
+
+////////////////////////////////////
+
+
+function double(number) {
+  return number * 2;
+}
+
+function calculate(number) {
+  return double(number) + 5;
+}
+
+console.log(calculate(10));
+
+//////////////////////////////////////
+
+let result = 1;
+
+for (let number = 1; number <= 4; number++) {
+  result *= number;
+}
+
+console.log(result);
+
+
+////////////////////////////////////////
+
+
+function countMultiples(start, end, divisor) {
+  let count = 0;
+
+  for (let number = start; number <= end; number++) {
+    if (number % divisor !== 0) {
+      continue;
+    }
+
+    count++;
+  }
+
+  return count;
+}
+
+console.log(countMultiples(1, 10, 3));
