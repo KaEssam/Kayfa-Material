@@ -1,0 +1,126 @@
+:root {
+  --lv-primary: #7c6cf5;
+  --lv-primary-dark: #6252e0;
+  --lv-bg: #f6f5f2;
+  --lv-surface: #ffffff;
+  --lv-border: #e7e4de;
+  --lv-text: #24222b;
+  --lv-muted: #7a7684;
+}
+
+body {
+  background: var(--lv-bg);
+  color: var(--lv-text);
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+/* Bootstrap primary override */
+.btn-primary {
+  --bs-btn-bg: var(--lv-primary);
+  --bs-btn-border-color: var(--lv-primary);
+  --bs-btn-hover-bg: var(--lv-primary-dark);
+  --bs-btn-hover-border-color: var(--lv-primary-dark);
+  --bs-btn-active-bg: var(--lv-primary-dark);
+}
+.btn-outline-primary {
+  --bs-btn-color: var(--lv-primary);
+  --bs-btn-border-color: var(--lv-primary);
+  --bs-btn-hover-bg: var(--lv-primary);
+  --bs-btn-hover-border-color: var(--lv-primary);
+  --bs-btn-active-bg: var(--lv-primary);
+  --bs-btn-active-border-color: var(--lv-primary);
+}
+.text-primary { color: var(--lv-primary) !important; }
+.form-control:focus, .form-select:focus {
+  border-color: var(--lv-primary);
+  box-shadow: 0 0 0 .2rem rgba(124, 108, 245, .2);
+}
+
+/* ---------- Auth pages ---------- */
+.auth-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px 16px;
+}
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  background: var(--lv-surface);
+  border: 1px solid var(--lv-border);
+  border-radius: 16px;
+  padding: 32px;
+}
+.brand {
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: -.02em;
+}
+.brand i { color: var(--lv-primary); }
+
+/* ---------- App layout ---------- */
+.navbar {
+  background: var(--lv-surface);
+  border-bottom: 1px solid var(--lv-border);
+}
+.sidebar {
+  background: var(--lv-surface);
+  border: 1px solid var(--lv-border);
+  border-radius: 12px;
+  padding: 16px;
+}
+.sidebar .list-group-item {
+  border: 0;
+  border-radius: 8px !important;
+  cursor: pointer;
+}
+.sidebar .list-group-item.active {
+  background: rgba(124, 108, 245, .12);
+  color: var(--lv-primary);
+  font-weight: 600;
+}
+
+/* ---------- Cards ---------- */
+.item-card {
+  background: var(--lv-surface);
+  border: 1px solid var(--lv-border);
+  border-radius: 12px;
+  transition: transform .15s, box-shadow .15s;
+  height: 100%;
+}
+.item-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .06);
+}
+.item-card .card-url {
+  color: var(--lv-muted);
+  font-size: .85rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+.icon-btn {
+  border: 0;
+  background: transparent;
+  color: var(--lv-muted);
+  padding: 4px 6px;
+  border-radius: 6px;
+}
+.icon-btn:hover { background: var(--lv-bg); color: var(--lv-text); }
+.icon-btn.is-active { color: #e0a100; }
+.icon-btn.danger:hover { color: #dc3545; }
+
+.note-content {
+  white-space: pre-wrap;
+  color: #4a4753;
+  font-size: .95rem;
+}
+
+/* ---------- States ---------- */
+.empty-state {
+  text-align: center;
+  color: var(--lv-muted);
+  padding: 48px 16px;
+}
+.empty-state i { font-size: 2.5rem; display: block; margin-bottom: 8px; }
