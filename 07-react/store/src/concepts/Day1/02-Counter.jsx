@@ -3,7 +3,7 @@ function Counter() {
 
   count = count + 1;
 
-  return <h1>Renderd {count} times</h1>;
+  return <h1>Renderd {count} time</h1>;
 }
 
 export default Counter;
