@@ -1,4 +1,4 @@
-import Tailwind from './Day2/04-Tailwind';
+import ArrayRender from './Day4/01-map';
 
 function Playground() {
   // return <RenderLog />;
@@ -6,7 +6,16 @@ function Playground() {
   // return <JsxIsJs />;
   // return <Expressions />;
   // return <JsxTags />;
-  return <Tailwind />;
+  // return <Tailwind />;
+  // return (
+  //   <>
+  //     <Greating />
+  //     <Commponent />;
+  //   </>
+  // );
+
+  // return <Hello />;
+  return <ArrayRender />;
 }
 
 export default Playground;

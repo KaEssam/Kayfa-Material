@@ -1,59 +1,48 @@
+import { products } from '../data/products';
 import './App.css';
-import navLogo from './assets/images.png';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import ProductGrid from './components/ProductGrid';
+
 function App() {
-  const storeName = 'Kayfa store';
+  const storeName = 'asdasdsad store';
   const bio = 'All things Here';
-  const year = new Date().getFullYear();
+  const cats = products.map((product) => product.category);
+  console.log(cats);
+  const categories = cats.filter((item, index) => {
+    return cats.indexOf(item) === index;
+  });
+  console.log(categories);
   return (
-    <>
-      <header className="border-b border-gray-200 bg-white max-w">
-        <div className="flex mx-auto items-center justify-between px-6 py-2">
-          <a href="/">
-            <img src={navLogo} alt={`${storeName} logo`} className="w-2xs" />
-          </a>
-          <nav className="flex gap-4 text-xl font-medium text-gray-600">
-            <a href="/" className="hover:text-indigo-400">
-              Home
-            </a>
-            <a href="/" className="hover:text-indigo-400">
-              Products
-            </a>
-            <a href="/" className="hover:text-indigo-400">
-              Cart
-            </a>
-          </nav>
-        </div>
-      </header>
+    <div className="min-h-screen bg-gray-50 flex flex-col font-sans">
+      <Header storeName={storeName} />
 
-      <main>
-        <section className="mx-auto grid max-w items-center justify-between gap-10 px-4 py-16 md:grid-cols-2">
-          <div>
-            <p className="text-sm font-semibold uppercase text-indigo-700">
-              White Friday
-            </p>
-            <h1 className="text-4xl font-bold text-gray-900 ">{bio}</h1>
-            <p className="mt-4 text-lg font-bold text-gray-500 ">
-              Free shipping on orders
-            </p>
-            <a
-              href="/"
-              className=" mt-8 inline-block rounded-lg bg-indigo-500 px-4 py-2 font-semibold text-white hover:bg-indigo-700 "
-            >
-              Shop now
-            </a>
-          </div>
+      <main className="flex-grow">
+        <Hero storeName={storeName} bio={bio} />
 
-          <img src={navLogo} alt={`${storeName} logo`} className="w-2xs" />
-        </section>
+        {categories.map((category) => (
+          <section
+            className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12"
+            key={category}
+          >
+            <h2 className="text-4xl mx-auto font-bold text-gray-900 ">
+              {category}
+            </h2>
+            <div className="">
+              <ProductGrid
+                products={products.filter(
+                  (product) => product.category === category,
+                )}
+              />
+            </div>
+          </section>
+        ))}
       </main>
 
-      <footer className="border-t border-gray-200 py-6 text-center text-sm text-gray-600">
-        <p>
-          {year}
-          {storeName}. All rights
-        </p>
-      </footer>
-    </>
+      <Footer storeName={storeName} />
+    </div>
   );
 }
+
 export default App;
